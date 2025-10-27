@@ -8,15 +8,23 @@
         <link rel="stylesheet" href="css/styles.css">
         <title>CIS155: Web Development I</title>
     </head>
-    <body id="body-one">
-        <header>
+    <body>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html/second.html">Columns</a></li>
+                <li><a href="html/third.html">Placeholder 1</a></li>
+                <li><a href="html/fourth.html" class="lastitem">Placeholder 2</a></li>
+            </ul>
+        </nav>
+        <header id="homepage">
             <h1>German Shepherds</h1>
             <h2>Website made by Nathaniel Webb</h2>
             <img src="images/shepherd-home.png" alt="picture of German Shepherd laying down" width="250px">
         </header>
-        <main id="main-one">
-            <section id="section-one">
-                <h2 id="section-one-head" class="head">Details</h2>
+        <main>
+            <section id="number-one">
+                <h2 id="placeholder">Details</h2>
                 <p>This website will include pages dedicated to:</p>
                 <ul>
                     <li>Brief history of German Shepherds</li>
@@ -25,13 +33,15 @@
                     <li>My personal experiences with my own German Shepherd</li>
                 </ul>
             </section>
-            <section id="section-two">
+            <section id="number-two">
                 <!--everything in this section will most likely be subject to change as this course goes on-->
-                <h2 id="section-two-head" class="head">Navigation</h2>
-                <p> You can find the second page of this website <a href="html/second.html">here</a>.</p>
+                <h2 class="head">Navigation</h2>
+                <p> You can find the Wikipedia Page on German Shepherds <a href="https://en.wikipedia.org/wiki/German_Shepherd" target="_black">here</a>.</p> <!-- Module 6: This link opens to another browser tab -->
+                <p>Below is empty space used to make the page scrollable</p>
             </section>
         </main>
-        <footer id="footer-one">
+        <p><a href="#top">Return to top</a></p> 
+        <footer id="last">
                 <p>Nathaniel Webb CIS155 Fall 2025</p>
         </footer>
     </body>
