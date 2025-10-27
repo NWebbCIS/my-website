@@ -1,35 +1,63 @@
-header {
-    background: url(../images/monkey.png);
-    width: 55%;
-    margin-top: 23em;
-}
-
-#body-one {
+body {
     background-color: rgb(216, 138, 73);
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#section-one>h2 {
-    color: rgb(155, 206, 53);
-}
-
-section#section-one li {
+section#number-one li {
     line-height: 2em;
-    padding: 5%;
-    background: url(../images/suspiciousdog.png) repeat-y;
 }
 
-#section-one-head {
-    padding: 10%;
-    background: linear-gradient(180deg,rgb(220, 235, 8) 50%, rgb(180, 9, 180) 80%);
-    border: 5em ridge rgb(13, 182, 55);
-}
-
-#section-two-head {
-    padding: 15%;
-    color: rgb(211, 86, 86);
-}
-#footer-one {
+footer {
     font-style: italic;
     line-height: 4em;
+}
+
+header#homepage img {
+    width: 15%;
+    min-width: 150px;
+    padding-right: 2em;
+}
+
+#number-two {
+    margin-bottom: 600px; /* creates empty space to make page scrollable for placeholder link */ 
+}
+
+/* Navigation Menu */
+
+#nav_menu { padding-bottom: 3em;
+            margin: auto;
+            width: 50%;
+}
+#nav_menu ul { list-style-type: none;}
+
+#nav_menu ul li { 
+    float: left;
+    width: 25%;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    padding: 1em 0;   /* padding above and below a elements */
+    text-decoration: none;
+    background-color: rgb(3, 3, 26);
+    color: rgb(240, 234, 234);
+    font-weight: bold;
+    border-right: 2px solid rgb(216, 138, 73);
+}
+#nav_menu ul li a:hover { background-color: rgb(129, 129, 129);}
+
+#nav_menu ul li a.lastitem {border-right: none;}
+
+@media only screen and (max-width: 1063px) {
+    #nav_menu ul li { 
+        float: none;
+        width: 100%;
+    }
+
+    #nav_menu ul li a {
+        border-right: none;
+        border-bottom: 2px solid rgb(216, 138, 73);
+    }
+    #nav_menu ul li a.lastitem {border-bottom: none;}
 }
