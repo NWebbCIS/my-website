@@ -1,41 +1,68 @@
 body {
-    background-color: rgb(238, 170, 114);
+    background-color: rgb(218, 143, 83);
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    font-style: italic;
+    color: rgb(248, 250, 252);
+    background-color: rgb(0, 0, 0);
+    margin-top: auto;
+    border: 0.15em solid rgb(75, 74, 74);
+}
+
+header#homepage img {
+    display: flex;
+    width: 15%;
+    min-width: 150px;
+    padding-right: 2em;
+}
+
+div#sections {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    grid-gap: 20px 20px;
+    flex-direction: row;   
 }
 
 section#number-one li {
     line-height: 2em;
 }
 
-footer {
-    font-style: italic;
-    line-height: 4em;
+section#number-one {
+    margin-right: 1em;
+    flex-basis: 33%;
 }
 
-header#homepage img {
-    width: 15%;
-    min-width: 150px;
-    padding-right: 2em;
+section#number-two {
+    margin-left: 0;
+    flex-basis: 33%;
 }
-
-#number-two {
-    margin-bottom: 600px; /* creates empty space to make page scrollable for placeholder link */ 
+section#number-three {
+    margin-left: 0;
+    flex-basis: 33%;
 }
 
 /* Navigation Menu */
 
-#nav_menu { padding-bottom: 3em;
-            margin: auto;
-            width: 50%;
+.nav_menu { 
+    padding-bottom: 3em;
+    margin: auto;
+    width: 75%;
 }
-#nav_menu ul { list-style-type: none;}
-
-#nav_menu ul li { 
-    float: left;
-    width: 25%;
+.nav_menu ul { 
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
 }
 
-#nav_menu ul li a {
+.nav_menu ul li { 
+    flex-basis: 25%;
+}
+
+.nav_menu ul li a {
     text-align: center;
     display: block;
     padding: 1em 0;   /* padding above and below a elements */
@@ -45,21 +72,44 @@ header#homepage img {
     font-weight: bold;
     border-right: 2px solid rgb(216, 138, 73);
 }
-#nav_menu ul li a:hover { background-color: rgb(129, 129, 129);}
+.nav_menu ul li a:hover { 
+    background-color: rgb(243, 242, 242);
+    color: rgb(5, 5, 5)
+}
 
-#nav_menu ul li a.lastitem {border-right: none;}
+.nav_menu ul #current {
+    background-color: rgb(128, 127, 127);
+    color: var(--color-accent);
+}
 
-/* Media Query */
+.nav_menu ul li a.lastitem {
+    border-right: none;
+}
+
+/* Navigation Menu Media Query */
 
 @media only screen and (max-width: 1063px) {
-    #nav_menu ul li { 
-        float: none;
-        width: 100%;
-    }
 
-    #nav_menu ul li a {
+    .nav_menu ul { 
+    flex-direction: column;
+    }
+    .nav_menu ul li a {
         border-right: none;
         border-bottom: 2px solid rgb(216, 138, 73);
     }
-    #nav_menu ul li a.lastitem {border-bottom: none;}
+    .nav_menu ul li a.lastitem {
+        border-bottom: none;
+    }
+}
+
+/* Sections Media Query */
+
+@media only screen and (max-width: 1063px) {
+    div#sections {
+    flex-direction: column;
+}
+
+Section#number-two {
+    margin-left: 0em;
+}
 }
