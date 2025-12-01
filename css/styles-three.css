@@ -1,3 +1,5 @@
+/* Body CSS */
+
 body {
     background-color: rgb(218, 143, 83);
     font-family: Arial, Helvetica, sans-serif;
@@ -20,7 +22,7 @@ img {
     padding: 2em 0 3em 0;
 }
 
-div#sections {
+div#sections { /* adds background box, padding and margins to the section */
     margin: auto;
     width: 50%;
     background-color: rgb(105, 105, 105);
@@ -29,7 +31,7 @@ div#sections {
 }
 
 .title {
-    text-align: center;
+    text-align: center; /* centers all titles */
 }
 
 /* Return to Top Link CSS */
