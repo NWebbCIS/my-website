@@ -16,7 +16,7 @@ header {
     text-align: center;
 }
 
-div#sections {
+div#sections { /* moves sections to the center of the screen */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +26,7 @@ div#sections {
     text-align: center;
 }
 
-#section-one {
+#section-one { /* adds background box, padding and margins to first section */
     background-color: rgb(105, 105, 105);
     width: 50%;
     padding: 1em 3em 3em 3em;
@@ -35,13 +35,13 @@ div#sections {
     border-radius: 20px;
 }
 
-#section-one>img {
+#section-one>img { /* makes text move to the right of the image in section one */
     display: flex;
     padding-right: 2em;
     float: left;
 }
 
-#section-two {
+#section-two { /* adds background box, padding and margins to second section */
     background-color: rgb(105, 105, 105);
     width: 50%;
     padding: 1em 3em 3em 3em;
@@ -139,18 +139,19 @@ footer {
 
 @media only screen and (max-width: 1675px) {
     #police {
-        padding: 0;
-        width: 280px;
+        max-width: 100%;
+        height: auto;
 }
 
     #family {
-        padding: 0;
-        width: 280px;
+        max-width: 100%;
+        height: auto;
     }
 }
 
 @media only screen and (max-width: 555px) {
     #founder {
-        width: 250px;
+        max-width: 100%;
+        height: auto;
     }
 }
