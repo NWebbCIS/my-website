@@ -18,13 +18,15 @@ main {
     text-align: center;
 }
 
-header#homepage img {
+header#homepage img { /* adjusts size of image */
     display: flex;
     width: 25%;
     min-width: 150px;
     padding-right: 2em;
     margin: auto;
 }
+
+/* CSS below adds grey boxes to the background of each sections and adds padding and margins */
 
 div#sections {
     display: grid;
@@ -143,10 +145,12 @@ footer {
 
     section#number-two {
         margin: 2em 1em 1em 1em;
+        line-height: 1.5em;
     }
 
     section#number-three {
         margin: 2em 1em 1em 1em;
+        line-height: 1.5em;
     }
 
 }
